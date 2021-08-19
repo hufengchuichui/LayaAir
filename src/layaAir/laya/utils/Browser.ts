@@ -247,7 +247,7 @@ export class Browser {
 
         //强制修改meta标签，防止开发者写错
         var metas: any[] = doc.getElementsByTagName('meta');
-        var i: number = 0, flag: boolean = false, content: any = 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no';
+        var i: number = 0, flag: boolean = false, content: any = 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover';
         while (i < metas.length) {
             var meta: any = metas[i];
             if (meta.name == 'viewport') {
